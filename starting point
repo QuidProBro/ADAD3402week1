@@ -45,7 +45,8 @@ void generateSquare(float xOff, float yOff, float zOff, float xSize, float ySize
   fill(round(noise(xOff+10, yOff+10, zOff+10)*255/rounder)*rounder, round(noise(xOff+20, yOff+20, zOff+20)*255/rounder)*rounder, round(noise(xOff+30, yOff+30, zOff+30)*255/rounder)*rounder);
   
   if (mousePressed) {
-    fill(0);
+    fill(0, 0, 255);
+    //now its all blue
   }
   
   //Creating the relative matrix, transforming it & drawing the rectangles, then popping the matrix
