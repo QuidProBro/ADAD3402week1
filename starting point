@@ -44,6 +44,10 @@ void generateSquare(float xOff, float yOff, float zOff, float xSize, float ySize
   //Setting the colour from the noise
   fill(round(noise(xOff+10, yOff+10, zOff+10)*255/rounder)*rounder, round(noise(xOff+20, yOff+20, zOff+20)*255/rounder)*rounder, round(noise(xOff+30, yOff+30, zOff+30)*255/rounder)*rounder);
   
+  if (mousePressed) {
+    fill(0);
+  }
+  
   //Creating the relative matrix, transforming it & drawing the rectangles, then popping the matrix
   pushMatrix();
     translate((x+0.5)*xSize, (y+0.5)*ySize);
